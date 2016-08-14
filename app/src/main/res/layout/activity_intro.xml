@@ -11,19 +11,21 @@
 
     <TextView
         android:id="@+id/presenter_details"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/updated_count"
-        android:textSize="20sp"/>
+        android:layout_margin="20dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        tools:text="Count will appear here"/>
 
     <Button
         android:id="@+id/start"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
-        android:onClick="startButtonPressed"
-        android:text="@string/start"
-        />
+        android:layout_marginTop="20dp"
+        android:onClick="incrementButtonPressed"
+        android:padding="20dp"
+        android:text="@string/increment"/>
 
 
     <Button
@@ -31,8 +33,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:onClick="stopButtonPressed"
-        android:text="@string/stop"
-        />
+        android:onClick="decrementButtonPressed"
+        android:padding="20dp"
+        android:text="@string/decrement"/>
 
 </LinearLayout>

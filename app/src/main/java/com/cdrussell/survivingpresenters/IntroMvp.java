@@ -18,8 +18,8 @@ public interface IntroMvp {
 
         void detachView();
 
-        void startCounting();
+        void incrementValue();
 
-        void stopCounting();
+        void decrementValue();
     }
 }

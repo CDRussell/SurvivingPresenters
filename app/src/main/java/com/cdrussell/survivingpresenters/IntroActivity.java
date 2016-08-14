@@ -42,12 +42,12 @@ public class IntroActivity extends AppCompatActivity implements IntroMvp.View {
         return presenter;
     }
 
-    public void startButtonPressed(View view) {
-        presenter.startCounting();
+    public void incrementButtonPressed(View view) {
+        presenter.incrementValue();
     }
 
-    public void stopButtonPressed(View view) {
-        presenter.stopCounting();
+    public void decrementButtonPressed(View view) {
+        presenter.decrementValue();
     }
 
     @Override
