@@ -1,11 +1,7 @@
 package com.cdrussell.survivingpresenters;
 
 
-public interface IntroMvp {
-
-    interface Model {
-
-    }
+interface IntroMvp {
 
     interface View {
 

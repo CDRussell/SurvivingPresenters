@@ -7,9 +7,9 @@ import android.widget.TextView;
 
 public class IntroActivity extends AppCompatActivity implements IntroMvp.View {
 
-    private IntroMvp.Presenter presenter;
-
     private TextView output;
+
+    private IntroMvp.Presenter presenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,10 +17,6 @@ public class IntroActivity extends AppCompatActivity implements IntroMvp.View {
         setContentView(R.layout.activity_intro);
         bindViews();
         attachPresenter();
-    }
-
-    private void bindViews() {
-        output = (TextView) findViewById(R.id.presenter_details);
     }
 
     private void attachPresenter() {
@@ -40,6 +36,10 @@ public class IntroActivity extends AppCompatActivity implements IntroMvp.View {
     @Override
     public Object onRetainCustomNonConfigurationInstance() {
         return presenter;
+    }
+
+    private void bindViews() {
+        output = (TextView) findViewById(R.id.presenter_details);
     }
 
     public void incrementButtonPressed(View view) {
